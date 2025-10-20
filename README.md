@@ -48,10 +48,18 @@ Example:
 4) Commit with message: Solve <id>: <short-title>
 
 ## Testing
-- Compare output:
+- Manual test with sample input/output files.
 ```bash
     ./bin/problem-id < data/problem-id/sample.in > out.txt
-    diff -u out.txt data/problem-id/sample.out
+    diff out.txt data/problem-id/sample.out
+```
+- Using Makefile:
+```bash
+    make test problem-id
+```
+- Or use:
+```bash
+    make test-all
 ```
 
 ## Style
